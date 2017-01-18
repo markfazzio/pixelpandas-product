@@ -1,0 +1,345 @@
+/*
+ Theme Name:   Coostr
+ Theme URI:    http://coostr.com
+ Description:  Coostr theme - child of Storefront theme
+ Author:       Pixel Pandas
+ Author URI:   http://pixelpandas.com
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         responsive-layout, accessibility-ready
+ Text Domain:  coostr
+*/
+
+/* Pseudo */
+
+body {
+	font-size: 14px;
+}
+
+/* Helpers */
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text,
+.form-control {
+	background: #fff;
+	box-shadow: none;
+	border: 1px solid #eee;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: -4px;
+}
+
+/* Nav */
+
+.main-navigation ul.menu > li > a,
+.main-navigation ul.nav-menu > li > a {
+	padding: 0 1em 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.main-navigation ul.menu > li > a:hover,
+.main-navigation ul.nav-menu > li > a:hover {
+	text-decoration: none;
+}
+
+.main-navigation ul.menu > li > a:focus,
+.main-navigation ul.nav-menu > li > a:focus {
+	outline: none;
+}
+
+/* Headers */
+
+.hentry, .hentry .entry-header, .hentry .entry-header h1 {
+	border: none;
+	padding: 0;
+}
+
+.hentry, .hentry .entry-header {
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.entry-title {
+	margin-top: 15px;
+}
+
+/* Home Page */
+
+.coostr-color-selector {
+	padding-bottom: 75px;
+}
+
+.color:focus, .color:active {
+  	outline:0px !important;
+  	-webkit-appearance:none;
+}
+
+.turtle-selector.row {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.turtle-selector .color {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 5px;
+	border: 2px solid #eee;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px; 
+}
+
+.turtle-selector .color.active {
+	border-color: #000;
+}
+
+.turtle-selector .colors-separator {
+	width: 2px;
+	height: 20px;
+	background: green;
+	display: inline-block;
+	margin:0 5px -4px;
+}
+
+.turtle-image.row,
+.turtle-image.row .turtle {
+	display: none;
+}
+
+.turtle-image.row.active {
+	display: block;
+}
+
+.turtle-image.row .turtle.active {
+	display: block;
+}
+
+.turtle-image.row .turtle {
+	cursor: pointer;
+}
+
+.turtle-image.row .pop-wrapper {
+	position: relative;
+}
+
+.turtle-image.row .pop-wrapper .pop-indicator {
+	visibility: hidden;
+	text-align: center;
+}
+
+.turtle-image.row .pop-wrapper .pop-indicator .popicon {
+	margin-right: 3px;
+}
+
+.turtle-image.row .turtle:hover .pop-indicator {
+	visibility: visible;
+}
+
+.turtle-image .color-name {
+	font-weight: bold;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background: none;
+}
+
+#carousel {
+	border: 1px solid #eee;
+}
+
+.home .news-articles, .home .social-wrapper {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.home .news-articles article {
+	border-top: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+.home .news-articles h1 {
+	padding-bottom: 20px;
+}
+
+.home .news-articles article iframe {
+	width: 100% !important;
+}
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+	margin: 0;
+}
+
+/* Social */
+
+.social-wrapper .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-wrapper h2 {
+    font-weight: normal;
+}
+
+.social-wrapper .col-md-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.social-icon {
+	margin-bottom: 15px;
+}
+
+.fb-photo {
+	margin-top: 10px;
+}
+
+.timeline .stream {
+    height: 300px !important;
+}
+
+.ig-feed {
+	padding-top: 20px;
+}
+
+.ig-photo {
+    margin-bottom: 30px;
+}
+
+.ig-photo img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.fb-photo img {
+    border: 1px solid #ccc;
+}
+
+.ig-follow-wrapper {
+	padding-bottom: 15px;
+}
+
+/* tw */
+
+.tweets-wrapper h2 {
+	display: none;
+}
+
+ul#twitter {
+	padding: 0;
+}
+
+ul#twitter li {
+	list-style: none;
+	padding:15px;
+    border-bottom: 1px solid #999;
+}
+
+.fb-update {
+    padding:15px;
+    border-bottom: 1px solid #999;
+}
+
+.fb-update:first-child {
+    padding-top:0;
+    border-top:none;
+}
+
+.fb-update:last-child {
+    padding-bottom:0;
+    border-bottom:none;
+}
+
+.fb-update h2 {
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.fb-update p {
+    font-size:14px;
+    margin-bottom:0;
+}
+
+/* Featurettes */
+
+.featurette {
+	opacity: 0;
+	padding: 30px 0;
+}
+
+.featurette .lead {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.featurette ul li {
+	list-style-position: inside;
+}
+
+/* Gallery */
+
+.gallery .img-wrapper {
+	border: 1px solid #eee;
+	margin-bottom: 30px;
+	height: 170px;
+	overflow: hidden;
+	object-fit: fill;
+}
+
+.gallery .image a img {
+	max-width: 100%;
+}
+
+/* Product */
+
+.product_title {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	.featurette {
+		text-align: center !important;
+		opacity: 1 !important;
+	}
+	.featurette ul {
+		margin: 0;
+		padding: 0;
+	}
+	.turtle-selector .color {
+		width: 40px;
+		height: 40px;
+		position: relative;
+		z-index: 950;
+	}
+	.turtle-selector .colors-separator {
+		display: none;
+	}
+	.turtle-selector {
+		padding: 20px;
+	}
+}
